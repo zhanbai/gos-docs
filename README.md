@@ -149,7 +149,7 @@ startretries=3
 # stderr 日志输出位置
 stderr_logfile=/var/www/gos/log/stderr.log
 # stdout 日志输出位置
-stdout_logfile=/var/www/hyperf/log/stdout.log
+stdout_logfile=/var/www/gos/log/stdout.log
 ```
 
 **启动 Supervisor**
@@ -165,9 +165,9 @@ $ sudo supervisord -c /etc/supervisor/supervisord.conf
 ```bash
 # 启动 gos 应用
 $ sudo supervisorctl start gos
-# 重启 hyperf 应用
+# 重启 gos 应用
 $ sudo supervisorctl restart gos
-# 停止 hyperf 应用
+# 停止 gos 应用
 $ sudo supervisorctl stop gos  
 # 查看所有被管理项目运行状态
 $ sudo supervisorctl status
